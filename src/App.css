@@ -1,9 +1,31 @@
-.App {
-  max-width: 600px;
-  margin: 30px auto;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9f7fe;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.App {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* BIGGER FOOTER SPACE */
 .App footer {
-  font-size: 11px;
-  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  margin-top: 80px; /* Increased to push footer way down */
+  text-align: center;
+  color: #878787;
+}
+
+.App footer a {
+  color: #885df1;
+  text-decoration: none;
 }

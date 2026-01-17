@@ -1,0 +1,21 @@
+.WeatherForecast {
+  /* This pushes the whole forecast section down away from the current weather */
+  margin-top: 50px; 
+  text-align: center;
+}
+
+.WeatherForecast-day {
+  font-size: 16px;
+  color: #929292;
+  margin-bottom: 10px;
+}
+
+.WeatherForecast-temperature-max {
+  font-weight: bold;
+  color: #f65282;
+  margin-right: 10px;
+}
+
+.WeatherForecast-temperature-min {
+  color: #c7c7c7;
+}

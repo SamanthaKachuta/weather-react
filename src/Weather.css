@@ -1,47 +1,78 @@
 .Weather {
-  font-family: arial, sans-serif;
   color: #878787;
+  font-family: Arial, sans-serif;
   border: 1px solid #dadde1;
-  padding: 20px;
-  border-radius: 5px;
+  padding: 30px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08); 
 }
 
-.Weather h1 {
-  color: #353535;
-  margin: 20px 0 0 0;
-  font-size: 24px;
-  line-height: 28px;
+/* SEARCH FORM */
+.Weather form {
+  margin-bottom: 60px;
 }
 
+.Weather .search-input {
+  background-color: #f9f9fa;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 15px;
+  color: #6c757d;
+  width: 100%;
+}
+
+.Weather .btn-primary {
+  background-color: #885df1;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.Weather .btn-primary:hover {
+  background-color: #7046ce;
+}
+
+/* FIX: REMOVE BULLETS AND STYLE TEXT */
 .Weather ul {
   margin: 0;
   padding: 0;
 }
 
 .Weather li {
-  color: #878787;
+  list-style: none; /* This removes the bullets */
   font-size: 16px;
-  font-weight: 100;
-  line-height: 19px;
-  list-style: none;
+  color: #8c8c8c;
+  line-height: 24px;
+  text-transform: capitalize; /* Capitalize description */
 }
 
-.Weather .temperature {
-  color: #353535;
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 64px;
+/* FIX: CITY NAME */
+.Weather h1 {
+  color: #272142; /* Darker, clearer color */
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
-.Weather .unit {
-  color: #353535;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  top: -34px;
+/* FIX: RED HIGHLIGHTS */
+.Weather .highlight {
+  color: #f65282; /* The Red/Pink color */
+  font-weight: normal;
 }
 
-.Weather img {
-  width: 64px;
-  margin-right: 10px;
+/* TEMP SECTION */
+.Weather .temperature-container {
+  text-align: right;
+}
+
+
+.logo {
+  max-width: 150px;  /* <--- This stops it from getting too big */
+  height: auto;      /* Keeps the shape correct */
+  margin-bottom: 30px; /* Adds space between logo and search bar */
+  display: block;
 }
