@@ -11,7 +11,6 @@ export default function WeatherInfo(props) {
           <h1>{props.data.city}</h1>
           <ul>
             <li>
-              {/* DATE and DESCRIPTION on the SAME line now */}
               <FormattedDate date={props.data.date} />{props.data.description}
             </li>
             <li>
